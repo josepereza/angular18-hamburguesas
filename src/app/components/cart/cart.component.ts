@@ -4,12 +4,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { CurrencyPipe } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [MatCardModule,MatListModule, MatIconModule, CurrencyPipe],
+  imports: [MatCardModule,MatListModule, MatIconModule, CurrencyPipe,MatButtonModule],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })

@@ -12,7 +12,9 @@ export class CartService {
   getTotalItems = computed(() => this.cartItems().reduce((total, item) => total + item.quantity, 0));
 
   getTotalPrice = computed(() => this.cartItems().reduce((total, item) => total + (item.product.price * item.quantity), 0));
-
+  
+  getNumItems= computed(()=>this.cartItems().length )
+  
   addToCart(item: CartItem) {
     this.cartItems.update(items => {
       const existingItem = items.find(i => i.product.id === item.product.id);
