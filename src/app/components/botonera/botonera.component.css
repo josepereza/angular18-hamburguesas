@@ -7,7 +7,8 @@
   
   .example-button-row {
     display: table-cell;
-  width: 100vw;
+    width: 100vw;
+    padding: 20px;
   }
   
   .example-button-row .mat-mdc-button-base {
@@ -16,7 +17,7 @@
   
   .example-flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     flex-wrap: wrap;
   }
   
