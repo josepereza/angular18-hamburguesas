@@ -1,0 +1,10 @@
+<div class="home-container">
+    <div class="category-grid">
+      @for (category of categories; track category.id){
+      <a  [routerLink]="['/products', category.name]" class="category-item">
+        <mat-icon>{{category.icon}}</mat-icon>
+        <span>{{category.display}}</span>
+      </a>
+    }
+    </div>
+  </div>

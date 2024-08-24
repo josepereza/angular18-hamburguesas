@@ -1,0 +1,11 @@
+<div class="product-list-container">
+    <h2>{{categoryName | titlecase}}</h2>
+    <div class="product-grid">
+      @for (product of filteredProducts(); track product.id){
+      <app-product-item 
+        [product]="product" 
+        (addToCart)="addToCart($event)"
+      ></app-product-item>
+      }
+    </div>
+  </div>

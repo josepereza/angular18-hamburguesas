@@ -1,0 +1,21 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  mat-card-content {
+    flex-grow: 1;
+  }
+  img {
+    object-fit: cover;
+    height: 200px;
+  }
+  h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
